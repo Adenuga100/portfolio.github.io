@@ -1877,3 +1877,539 @@ span{
     
 
 }
+
+/* Responsive layout overrides */
+img,
+svg,
+video {
+    max-width: 100%;
+}
+
+@media (max-width: 767px) {
+    body {
+        width: 100%;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 58px;
+        padding: 8px 16px;
+    }
+
+    nav ul.menu {
+        width: 100%;
+        margin: 0;
+        justify-content: flex-end;
+    }
+
+    nav ul li:first-child {
+        margin-left: 0;
+        font-size: 24px;
+    }
+
+    nav ul.menu li.mean {
+        display: none;
+    }
+
+    nav .menubtn {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    nav .sidebar {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: min(280px, 82vw);
+        height: 100vh;
+        padding: 16px;
+        background: rgb(23, 23, 48);
+        box-shadow: -10px 0 30px rgb(0 0 0 / 25%);
+    }
+
+    nav .sidebar li {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    nav .sidebar li:first-child {
+        margin: 0 0 12px;
+        text-align: right;
+    }
+
+    nav .sidebar li a {
+        display: block;
+        padding: 8px 0;
+    }
+
+    section .home,
+    section .home .homes {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    section .home {
+        min-height: 460px;
+        height: auto;
+        padding: 100px 20px 50px;
+    }
+
+    section .home .homes {
+        margin: 0;
+        text-align: center;
+    }
+
+    .home h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+        overflow-wrap: anywhere;
+    }
+
+    .home h3 {
+        font-size: clamp(1.15rem, 5vw, 1.5rem);
+    }
+
+    .home ul {
+        justify-content: center;
+    }
+
+    .abouT {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .About .about {
+        width: 100%;
+        margin: 24px 0;
+    }
+
+    .About .about .img {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .About .about img {
+        width: min(220px, 65vw);
+        margin: 20px auto;
+    }
+
+    .About .about .about1 {
+        width: 100%;
+        margin: 0;
+        padding: 0 22px;
+    }
+
+    .about1 p,
+    .About .about .about1 p {
+        width: auto;
+        margin: 16px 0;
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    .about1 h4 {
+        margin: 16px 0;
+        font-size: 1.2rem;
+    }
+
+    .about1 button {
+        margin: 16px 0;
+    }
+
+    .serivces {
+        margin: 64px 16px 32px;
+    }
+
+    .serivces h1,
+    .skills h1,
+    .softskills h1,
+    .project .till h1 {
+        font-size: clamp(2rem, 8vw, 2.5rem);
+    }
+
+    .serivce {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 20px;
+        margin: 28px 0 64px;
+    }
+
+    .serivce .box {
+        width: 100%;
+        margin: 0;
+        padding: 24px;
+    }
+
+    .serivce .box p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .serivce .box h1 {
+        font-size: 1.5rem;
+    }
+
+    .skil {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0;
+    }
+
+    .skill .div {
+        width: 100%;
+        margin: 16px 0;
+        padding: 20px;
+    }
+
+    .skill h2 {
+        margin-top: 8px;
+    }
+
+    .skill p {
+        margin: 10px;
+        font-size: 1rem;
+    }
+
+    .skill .dev {
+        flex-wrap: wrap;
+    }
+
+    .softskills {
+        margin: 50px 16px;
+    }
+
+    .softskill {
+        gap: 12px;
+        margin: 24px 0;
+    }
+
+    .softskill .cir {
+        width: min(42vw, 190px);
+        margin: 8px;
+    }
+
+    .softskill .cir .Text {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .project {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .project .software .ware1,
+    .project .wordp {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 24px;
+    }
+
+    .project .software .ware1 .git,
+    .project .wordp .word1 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .project .software .ware1 .git img,
+    .project .wordp img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 12px auto;
+        object-fit: cover;
+    }
+
+    .project .software .ware1 .git p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .project .wordp .word1 > div:last-child {
+        position: relative;
+    }
+
+    .project .wordp .overlay,
+    .project .wordp .overlay1 {
+        inset: 12px 0 auto;
+        width: 100%;
+        height: calc(100% - 24px);
+    }
+
+    .con {
+        margin: 48px 0;
+    }
+
+    .cont {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 24px;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .cont .contact {
+        min-width: 0;
+        margin: 12px 0;
+    }
+
+    .cont .contact .act {
+        font-size: clamp(2rem, 8vw, 2.5rem);
+    }
+
+    .cont .contact p {
+        width: auto;
+        margin: 12px 0 24px;
+        font-size: 1rem;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
+    .cont .contact .mail .nu1 p a {
+        font-size: 1rem;
+        overflow-wrap: anywhere;
+    }
+
+    .cont .contact form {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cont .contact form .for {
+        margin: 12px 0;
+    }
+
+    .cont .contact form .for input,
+    .cont .contact form .for textarea {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        font: inherit;
+    }
+
+    .cont .contact form .btn button {
+        width: 100%;
+        margin: 0;
+    }
+
+    #myBtn {
+        right: 18px;
+        bottom: 18px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .About .about .about1 {
+        margin: 0;
+        padding: 0 12px;
+    }
+
+    .About .about .about1 p {
+        width: auto;
+        margin: 16px 0;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .about1 h4 {
+        margin: 20px 0;
+        font-size: 1.25rem;
+    }
+
+    .about1 h1 {
+        font-size: 2rem;
+    }
+
+    .abouT {
+        align-items: center;
+    }
+
+    .About .about {
+        margin: 32px;
+    }
+
+    .About .about img {
+        width: min(32vw, 320px);
+        margin-left: 0;
+    }
+
+    .serivce {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: auto;
+        margin: 32px;
+        gap: 24px;
+    }
+
+    .serivce .box {
+        width: auto;
+        margin: 0;
+        padding: 24px;
+    }
+
+    .serivce .box p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .serivce .box h1 {
+        font-size: 1.5rem;
+    }
+
+    .skil {
+        flex-wrap: wrap;
+    }
+
+    .skills h1,
+    .softskills h1,
+    .project .till h1 {
+        font-size: 2.25rem;
+    }
+
+    .skill h2 {
+        font-size: 1.5rem;
+    }
+
+    .skill h3,
+    .skill p,
+    .softskill p {
+        font-size: 1rem;
+    }
+
+    .softskills {
+        margin: 50px 24px;
+    }
+
+    .softskill {
+        margin: 28px 0;
+    }
+
+    .project .software .ware1,
+    .project .wordp {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .project .software .ware1 .git,
+    .project .wordp .word1 {
+        flex: 1 1 320px;
+        min-width: 0;
+        margin: 16px;
+    }
+
+    .project .software .ware1 .git p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .cont {
+        gap: 24px;
+        margin: 20px;
+    }
+
+    .cont .contact {
+        flex: 1 1 0;
+        min-width: 0;
+        margin: 16px;
+    }
+
+    .cont .contact p {
+        width: auto;
+        margin: 12px 0 24px;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .cont .contact .mail .nu1 p a {
+        font-size: 1rem;
+    }
+
+    .cont .contact form .for input,
+    .cont .contact form .for textarea {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .About,
+    .abouT {
+        width: 100%;
+    }
+
+    .abouT {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .About .about {
+        width: min(100% - 48px, 1100px);
+        margin: 24px auto;
+    }
+
+    .About .about .img {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .About .about img {
+        display: block;
+        width: min(390px, 32vw);
+        margin: 24px auto;
+    }
+
+    .About .about .about1 {
+        width: 100%;
+        margin: 0;
+        padding: 0 24px;
+        text-align: center;
+    }
+
+    .About .about .about1 p {
+        width: auto;
+        margin: 16px 0;
+        font-size: 1.125rem;
+        line-height: 1.7;
+    }
+
+    .About .about1 h4 {
+        margin: 20px 0;
+        font-size: 1.25rem;
+    }
+
+    .About .about1 h1 {
+        font-size: 2.5rem;
+    }
+
+    .About .about1 button {
+        width: 200px;
+        height: 56px;
+        margin: 20px 0;
+    }
+}
+
+/* Keep the About portrait centered at every viewport size. */
+.About .about .img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+
+.About .about img {
+    display: block;
+    margin: 24px auto;
+}
